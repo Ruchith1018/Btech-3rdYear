@@ -1,0 +1,257 @@
+INFO:pytorch_pretrained_bert.tokenization:loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at C:\Users\blruc\.pytorch_pretrained_bert\26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO:pytorch_pretrained_bert.modeling:loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at C:\Users\blruc\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO:pytorch_pretrained_bert.modeling:extracting archive file C:\Users\blruc\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir C:\Users\blruc\AppData\Local\Temp\tmpsfa__n9m
+INFO:pytorch_pretrained_bert.modeling:Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+INFO:root:> n_trainable_params: 111846146, n_nontrainable_params: 0
+INFO:root:> training arguments:
+INFO:root:>>> model_name: bertgcn
+INFO:root:>>> dataset: headlines
+INFO:root:>>> optimizer: <class 'torch.optim.adam.Adam'>
+INFO:root:>>> initializer: <function xavier_uniform_ at 0x000001EEB4D52660>
+INFO:root:>>> lr: 2e-05
+INFO:root:>>> dropout: 0.1
+INFO:root:>>> l2reg: 1e-05
+INFO:root:>>> num_epoch: 50
+INFO:root:>>> batch_size: 16
+INFO:root:>>> log_step: 20
+INFO:root:>>> embed_dim: 100
+INFO:root:>>> hidden_dim: 768
+INFO:root:>>> bert_dim: 768
+INFO:root:>>> pretrained_bert_name: bert-base-uncased
+INFO:root:>>> max_seq_len: 85
+INFO:root:>>> polarities_dim: 2
+INFO:root:>>> hops: 3
+INFO:root:>>> patience: 5
+INFO:root:>>> device: cpu
+INFO:root:>>> seed: 776
+INFO:root:>>> valset_ratio: 0
+INFO:root:>>> model_class: <class 'models.bertgcn.BERTGCN'>
+INFO:root:>>> dataset_file: {'train': './datasets/headlines/train.raw', 'test': './datasets/headlines/test.raw'}
+INFO:root:>>> inputs_cols: ['text_bert_indices', 'bert_segments_indices', 'dependency_graph', 'affective_graph']
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 1
+INFO:root:Loss : 0.7448, Accuracy : 0.4938
+INFO:root:Loss : 0.6801, Accuracy : 0.5734
+INFO:root:Loss : 0.6433, Accuracy : 0.6115
+INFO:root:Loss : 0.6158, Accuracy : 0.6438
+INFO:root:Loss : 0.5927, Accuracy : 0.6625
+INFO:root:Loss : 0.5657, Accuracy : 0.6849
+INFO:root:Loss : 0.5431, Accuracy : 0.7067
+INFO:root:> Validation Accuracy : 0.8240, Validation F1 Score : 0.8207
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 2
+INFO:root:Loss : 0.3374, Accuracy : 0.8542
+INFO:root:Loss : 0.3721, Accuracy : 0.8533
+INFO:root:Loss : 0.3501, Accuracy : 0.8576
+INFO:root:Loss : 0.3242, Accuracy : 0.8750
+INFO:root:Loss : 0.3373, Accuracy : 0.8652
+INFO:root:Loss : 0.3253, Accuracy : 0.8708
+INFO:root:Loss : 0.3168, Accuracy : 0.8760
+INFO:root:Loss : 0.3093, Accuracy : 0.8781
+INFO:root:> Validation Accuracy : 0.8720, Validation F1 Score : 0.8662
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 3
+INFO:root:Loss : 0.1959, Accuracy : 0.8958
+INFO:root:Loss : 0.1934, Accuracy : 0.9159
+INFO:root:Loss : 0.1903, Accuracy : 0.9158
+INFO:root:Loss : 0.1848, Accuracy : 0.9223
+INFO:root:Loss : 0.1844, Accuracy : 0.9273
+INFO:root:Loss : 0.1849, Accuracy : 0.9263
+INFO:root:Loss : 0.1769, Accuracy : 0.9281
+INFO:root:Loss : 0.1745, Accuracy : 0.9289
+INFO:root:> Validation Accuracy : 0.8720, Validation F1 Score : 0.8657
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 4
+INFO:root:Loss : 0.1216, Accuracy : 0.9653
+INFO:root:Loss : 0.0861, Accuracy : 0.9741
+INFO:root:Loss : 0.0773, Accuracy : 0.9732
+INFO:root:Loss : 0.0817, Accuracy : 0.9710
+INFO:root:Loss : 0.0794, Accuracy : 0.9712
+INFO:root:Loss : 0.0836, Accuracy : 0.9708
+INFO:root:Loss : 0.0890, Accuracy : 0.9685
+INFO:root:Loss : 0.0890, Accuracy : 0.9681
+INFO:root:> Validation Accuracy : 0.8600, Validation F1 Score : 0.8511
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 5
+INFO:root:Loss : 0.0409, Accuracy : 0.9896
+INFO:root:Loss : 0.0614, Accuracy : 0.9824
+INFO:root:Loss : 0.0523, Accuracy : 0.9856
+INFO:root:Loss : 0.0481, Accuracy : 0.9861
+INFO:root:Loss : 0.0518, Accuracy : 0.9851
+INFO:root:Loss : 0.0504, Accuracy : 0.9844
+INFO:root:Loss : 0.0538, Accuracy : 0.9811
+INFO:root:Loss : 0.0576, Accuracy : 0.9807
+INFO:root:> Validation Accuracy : 0.8840, Validation F1 Score : 0.8785
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 6
+INFO:root:Loss : 0.0318, Accuracy : 0.9958
+INFO:root:Loss : 0.0248, Accuracy : 0.9964
+INFO:root:Loss : 0.0204, Accuracy : 0.9955
+INFO:root:Loss : 0.0212, Accuracy : 0.9950
+INFO:root:Loss : 0.0297, Accuracy : 0.9928
+INFO:root:Loss : 0.0335, Accuracy : 0.9908
+INFO:root:Loss : 0.0305, Accuracy : 0.9921
+INFO:root:Loss : 0.0312, Accuracy : 0.9915
+INFO:root:> Validation Accuracy : 0.8800, Validation F1 Score : 0.8737
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 7
+INFO:root:Loss : 0.0043, Accuracy : 1.0000
+INFO:root:Loss : 0.0038, Accuracy : 1.0000
+INFO:root:Loss : 0.0147, Accuracy : 0.9978
+INFO:root:Loss : 0.0172, Accuracy : 0.9968
+INFO:root:Loss : 0.0151, Accuracy : 0.9974
+INFO:root:Loss : 0.0140, Accuracy : 0.9974
+INFO:root:Loss : 0.0127, Accuracy : 0.9977
+INFO:root:> Validation Accuracy : 0.8800, Validation F1 Score : 0.8737
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 8
+INFO:root:Loss : 0.0007, Accuracy : 1.0000
+INFO:root:Loss : 0.0016, Accuracy : 1.0000
+INFO:root:Loss : 0.0015, Accuracy : 1.0000
+INFO:root:Loss : 0.0017, Accuracy : 1.0000
+INFO:root:Loss : 0.0027, Accuracy : 0.9992
+INFO:root:Loss : 0.0091, Accuracy : 0.9975
+INFO:root:Loss : 0.0093, Accuracy : 0.9974
+INFO:root:Loss : 0.0094, Accuracy : 0.9969
+INFO:root:> Validation Accuracy : 0.8960, Validation F1 Score : 0.8892
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 9
+INFO:root:Loss : 0.1064, Accuracy : 0.9375
+INFO:root:Loss : 0.1201, Accuracy : 0.9583
+INFO:root:Loss : 0.0739, Accuracy : 0.9744
+INFO:root:Loss : 0.0545, Accuracy : 0.9814
+INFO:root:Loss : 0.0505, Accuracy : 0.9851
+INFO:root:Loss : 0.0480, Accuracy : 0.9850
+INFO:root:Loss : 0.0428, Accuracy : 0.9869
+INFO:root:Loss : 0.0397, Accuracy : 0.9878
+INFO:root:> Validation Accuracy : 0.8720, Validation F1 Score : 0.8683
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 10
+INFO:root:Loss : 0.0016, Accuracy : 1.0000
+INFO:root:Loss : 0.0078, Accuracy : 0.9977
+INFO:root:Loss : 0.0076, Accuracy : 0.9973
+INFO:root:Loss : 0.0104, Accuracy : 0.9953
+INFO:root:Loss : 0.0089, Accuracy : 0.9964
+INFO:root:Loss : 0.0110, Accuracy : 0.9959
+INFO:root:Loss : 0.0128, Accuracy : 0.9946
+INFO:root:Loss : 0.0125, Accuracy : 0.9953
+INFO:root:> Validation Accuracy : 0.8480, Validation F1 Score : 0.8466
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 11
+INFO:root:Loss : 0.0381, Accuracy : 0.9875
+INFO:root:Loss : 0.0310, Accuracy : 0.9896
+INFO:root:Loss : 0.0250, Accuracy : 0.9912
+INFO:root:Loss : 0.0278, Accuracy : 0.9911
+INFO:root:Loss : 0.0226, Accuracy : 0.9931
+INFO:root:Loss : 0.0218, Accuracy : 0.9932
+INFO:root:Loss : 0.0190, Accuracy : 0.9942
+INFO:root:Loss : 0.0223, Accuracy : 0.9938
+INFO:root:> Validation Accuracy : 0.8720, Validation F1 Score : 0.8683
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 12
+INFO:root:Loss : 0.0156, Accuracy : 0.9904
+INFO:root:Loss : 0.0146, Accuracy : 0.9943
+INFO:root:Loss : 0.0099, Accuracy : 0.9965
+INFO:root:Loss : 0.0107, Accuracy : 0.9966
+INFO:root:Loss : 0.0093, Accuracy : 0.9973
+INFO:root:Loss : 0.0110, Accuracy : 0.9967
+INFO:root:Loss : 0.0103, Accuracy : 0.9972
+INFO:root:Loss : 0.0093, Accuracy : 0.9975
+INFO:root:> Validation Accuracy : 0.8880, Validation F1 Score : 0.8796
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 13
+INFO:root:Loss : 0.0088, Accuracy : 0.9961
+INFO:root:Loss : 0.0061, Accuracy : 0.9983
+INFO:root:Loss : 0.0045, Accuracy : 0.9989
+INFO:root:Loss : 0.0036, Accuracy : 0.9992
+INFO:root:Loss : 0.0059, Accuracy : 0.9980
+INFO:root:Loss : 0.0074, Accuracy : 0.9973
+INFO:root:Loss : 0.0090, Accuracy : 0.9968
+INFO:root:Loss : 0.0091, Accuracy : 0.9964
+INFO:root:> Validation Accuracy : 0.8960, Validation F1 Score : 0.8905
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 14
+INFO:root:Loss : 0.0733, Accuracy : 0.9868
+INFO:root:Loss : 0.0482, Accuracy : 0.9872
+INFO:root:Loss : 0.0408, Accuracy : 0.9883
+INFO:root:Loss : 0.0373, Accuracy : 0.9889
+INFO:root:Loss : 0.0305, Accuracy : 0.9912
+INFO:root:Loss : 0.0266, Accuracy : 0.9921
+INFO:root:Loss : 0.0269, Accuracy : 0.9924
+INFO:root:> Validation Accuracy : 0.9080, Validation F1 Score : 0.9033
+INFO:root:>> Best model saved saved_models/bertgcn_headlines.pkl
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 15
+INFO:root:Loss : 0.0027, Accuracy : 1.0000
+INFO:root:Loss : 0.0095, Accuracy : 0.9943
+INFO:root:Loss : 0.0104, Accuracy : 0.9940
+INFO:root:Loss : 0.0074, Accuracy : 0.9960
+INFO:root:Loss : 0.0062, Accuracy : 0.9970
+INFO:root:Loss : 0.0054, Accuracy : 0.9975
+INFO:root:Loss : 0.0050, Accuracy : 0.9980
+INFO:root:Loss : 0.0051, Accuracy : 0.9982
+INFO:root:> Validation Accuracy : 0.8880, Validation F1 Score : 0.8801
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 16
+INFO:root:Loss : 0.0002, Accuracy : 1.0000
+INFO:root:Loss : 0.0002, Accuracy : 1.0000
+INFO:root:Loss : 0.0004, Accuracy : 1.0000
+INFO:root:Loss : 0.0006, Accuracy : 1.0000
+INFO:root:Loss : 0.0005, Accuracy : 1.0000
+INFO:root:Loss : 0.0005, Accuracy : 1.0000
+INFO:root:Loss : 0.0014, Accuracy : 0.9995
+INFO:root:Loss : 0.0020, Accuracy : 0.9991
+INFO:root:> Validation Accuracy : 0.9040, Validation F1 Score : 0.8993
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 17
+INFO:root:Loss : 0.0068, Accuracy : 1.0000
+INFO:root:Loss : 0.0022, Accuracy : 1.0000
+INFO:root:Loss : 0.0028, Accuracy : 1.0000
+INFO:root:Loss : 0.0023, Accuracy : 1.0000
+INFO:root:Loss : 0.0024, Accuracy : 0.9993
+INFO:root:Loss : 0.0030, Accuracy : 0.9994
+INFO:root:Loss : 0.0031, Accuracy : 0.9995
+INFO:root:Loss : 0.0028, Accuracy : 0.9996
+INFO:root:> Validation Accuracy : 0.9000, Validation F1 Score : 0.8960
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 18
+INFO:root:Loss : 0.0001, Accuracy : 1.0000
+INFO:root:Loss : 0.0120, Accuracy : 0.9960
+INFO:root:Loss : 0.0092, Accuracy : 0.9975
+INFO:root:Loss : 0.0073, Accuracy : 0.9982
+INFO:root:Loss : 0.0070, Accuracy : 0.9979
+INFO:root:Loss : 0.0062, Accuracy : 0.9983
+INFO:root:Loss : 0.0053, Accuracy : 0.9986
+INFO:root:Loss : 0.0051, Accuracy : 0.9988
+INFO:root:> Validation Accuracy : 0.8800, Validation F1 Score : 0.8768
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:Epoch : 19
+INFO:root:Loss : 0.0240, Accuracy : 0.9866
+INFO:root:Loss : 0.0696, Accuracy : 0.9743
+INFO:root:Loss : 0.0826, Accuracy : 0.9734
+INFO:root:Loss : 0.0710, Accuracy : 0.9780
+INFO:root:Loss : 0.0573, Accuracy : 0.9820
+INFO:root:Loss : 0.0519, Accuracy : 0.9836
+INFO:root:Loss : 0.0461, Accuracy : 0.9855
+INFO:root:Loss : 0.0406, Accuracy : 0.9874
+INFO:root:> Validation Accuracy : 0.8800, Validation F1 Score : 0.8741
+INFO:root:>> Early stopping!
+INFO:root:>> Test Accuracy : 0.9080, Test F1 Score : 0.9033
