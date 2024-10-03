@@ -2,11 +2,11 @@
 
 ## Description
 
-In the dynamic landscape of professional recruitment, the demand for skilled Data Analysts is on the rise. To bridge the gap between aspiring candidates and the evolving expectations of employers, we aim to develop an innovative AI-powered interview preparation tool called ReX. ReX is designed to empower users with the necessary skills and confidence to excel in Data Analyst interviews.
+In the dynamic landscape of professional recruitment, the demand for skilled Data Analysts is on the rise. To bridge the gap between aspiring candidates and the evolving expectations of employers, we aim to develop an innovative AI-powered interview preparation tool called Ruchith. Ruchith is designed to empower users with the necessary skills and confidence to excel in Data Analyst interviews.
 
 ## Features
 
-- **Text Chat**: Users can interact with an Rex AI assistant via text.
+- **Text Chat**: Users can interact with an Ruchith AI assistant via text.
 - **Speech Chat**: Users can speak to the Rex AI assistant and receive spoken responses.
 - **Auto-Scrolling Chat Box**: Ensures the latest messages are always visible.
 - **"Shift+Enter" for Line Breaks**: Enhances message formatting in chats.
@@ -36,14 +36,6 @@ Explain how to use the application:
 - **GPT-3.5-Turbo**: OpenAI's GPT-3.5-Turbo model for fast answering.
 
 
-## Demonstration
-
-[Rex AI Interview Prep Presentation](https://www.youtube.com/watch?v=ra9E84YI1l4)
-
-[Rex AI Interview Prep Walkthrough](https://www.youtube.com/watch?v=t6ZPUlb_a2Y)
-
-
-
 ## Screenshots
 
 ![Front Page](https://i.imgur.com/srSLalf.png)
@@ -53,11 +45,3 @@ Explain how to use the application:
 **And not just Interview Simulation, it also works for general Data Science questions to improve user's understanding**
 ![General Questioning](https://i.imgur.com/Rkosl69.png)
 
-
-## Contribution
-
-- **P9 Galaxy Guardians**
-
-## License
-
-MIT License
