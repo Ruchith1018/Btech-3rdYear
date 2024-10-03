@@ -1,4 +1,4 @@
-# Rex-AI-Interview-Chatbot
+# Ruchith-AI-Interview-Chatbot
 
 ## Description
 
